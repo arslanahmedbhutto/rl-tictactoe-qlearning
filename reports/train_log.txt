@@ -1,0 +1,52 @@
+== Trained vs random opponent
+    10,000: optimal moves 79.4% | loses to minimax 64.0% | beats random 86.5%
+    20,000: optimal moves 85.2% | loses to minimax 91.0% | beats random 92.8%
+    30,000: optimal moves 88.4% | loses to minimax 75.0% | beats random 91.8%
+    40,000: optimal moves 90.7% | loses to minimax 47.5% | beats random 93.5%
+    50,000: optimal moves 92.5% | loses to minimax 30.0% | beats random 91.8%
+    60,000: optimal moves 93.8% | loses to minimax 44.0% | beats random 96.5%
+    70,000: optimal moves 94.6% | loses to minimax 21.0% | beats random 93.5%
+    80,000: optimal moves 95.5% | loses to minimax 30.5% | beats random 95.8%
+    90,000: optimal moves 96.2% | loses to minimax 39.5% | beats random 92.0%
+   100,000: optimal moves 96.4% | loses to minimax 37.5% | beats random 93.2%
+   110,000: optimal moves 96.8% | loses to minimax 73.5% | beats random 94.5%
+   120,000: optimal moves 96.9% | loses to minimax 41.0% | beats random 94.8%
+   130,000: optimal moves 97.1% | loses to minimax 21.0% | beats random 94.0%
+   140,000: optimal moves 97.3% | loses to minimax 24.5% | beats random 95.5%
+   150,000: optimal moves 97.5% | loses to minimax 29.0% | beats random 96.0%
+   160,000: optimal moves 97.7% | loses to minimax 18.0% | beats random 94.8%
+   170,000: optimal moves 97.8% | loses to minimax 26.5% | beats random 94.2%
+   180,000: optimal moves 98.1% | loses to minimax 21.0% | beats random 96.8%
+   190,000: optimal moves 98.1% | loses to minimax 22.5% | beats random 94.5%
+   200,000: optimal moves 98.3% | loses to minimax 26.5% | beats random 96.8%
+== Trained by self-play
+    10,000: optimal moves 88.5% | loses to minimax 67.5% | beats random 74.8%
+    20,000: optimal moves 97.6% | loses to minimax 17.0% | beats random 85.5%
+    30,000: optimal moves 99.7% | loses to minimax 1.0% | beats random 86.2%
+    40,000: optimal moves 100.0% | loses to minimax 0.0% | beats random 86.5%
+    50,000: optimal moves 100.0% | loses to minimax 0.0% | beats random 89.2%
+    60,000: optimal moves 100.0% | loses to minimax 0.0% | beats random 88.8%
+    70,000: optimal moves 100.0% | loses to minimax 0.0% | beats random 85.5%
+    80,000: optimal moves 100.0% | loses to minimax 0.0% | beats random 85.5%
+    90,000: optimal moves 100.0% | loses to minimax 0.0% | beats random 85.8%
+   100,000: optimal moves 100.0% | loses to minimax 0.0% | beats random 87.2%
+   110,000: optimal moves 100.0% | loses to minimax 0.0% | beats random 88.2%
+   120,000: optimal moves 100.0% | loses to minimax 0.0% | beats random 86.2%
+   130,000: optimal moves 100.0% | loses to minimax 0.0% | beats random 87.0%
+   140,000: optimal moves 100.0% | loses to minimax 0.0% | beats random 88.5%
+   150,000: optimal moves 100.0% | loses to minimax 0.0% | beats random 88.0%
+   160,000: optimal moves 100.0% | loses to minimax 0.0% | beats random 86.8%
+   170,000: optimal moves 100.0% | loses to minimax 0.0% | beats random 88.0%
+   180,000: optimal moves 100.0% | loses to minimax 0.0% | beats random 86.8%
+   190,000: optimal moves 100.0% | loses to minimax 0.0% | beats random 88.8%
+   200,000: optimal moves 100.0% | loses to minimax 0.0% | beats random 87.0%
+# Results
+
+Games alternate sides (half as X, half as O). A perfect player can never be beaten, so draws are the best possible result against it.
+
+| Agent | Optimal moves | vs random: win / draw / loss | vs perfect player: draw / loss |
+|---|---|---|---|
+| Trained vs random opponent | 98.3% | 94.8% / 4.5% / 0.6% | 74.5% / 25.5% |
+| Trained by self-play | 100.0% | 87.3% / 12.7% / 0.0% | 100.0% / 0.0% |
+| Random player | — | 44.4% / 12.8% / 42.8% | 14.1% / 85.9% |
+

@@ -1,0 +1,417 @@
+{
+  "trained_at": "2026-10-15T22:52:36+00:00",
+  "results": {
+    "Trained vs random opponent": {
+      "regime": "random",
+      "episodes": 200000,
+      "train_minutes": 1.4,
+      "q_entries": 15334,
+      "optimal_move_rate": 0.9834070796460177,
+      "vs_random": {
+        "as_X": {
+          "win": 996,
+          "draw": 4,
+          "loss": 0
+        },
+        "as_O": {
+          "win": 901,
+          "draw": 87,
+          "loss": 12
+        },
+        "total": {
+          "win": 1897,
+          "draw": 91,
+          "loss": 12
+        },
+        "games": 2000
+      },
+      "vs_minimax": {
+        "as_X": {
+          "win": 0,
+          "draw": 500,
+          "loss": 0
+        },
+        "as_O": {
+          "win": 0,
+          "draw": 245,
+          "loss": 255
+        },
+        "total": {
+          "win": 0,
+          "draw": 745,
+          "loss": 255
+        },
+        "games": 1000
+      }
+    },
+    "Trained by self-play": {
+      "regime": "self",
+      "episodes": 200000,
+      "train_minutes": 1.1,
+      "q_entries": 12994,
+      "optimal_move_rate": 1.0,
+      "vs_random": {
+        "as_X": {
+          "win": 965,
+          "draw": 35,
+          "loss": 0
+        },
+        "as_O": {
+          "win": 781,
+          "draw": 219,
+          "loss": 0
+        },
+        "total": {
+          "win": 1746,
+          "draw": 254,
+          "loss": 0
+        },
+        "games": 2000
+      },
+      "vs_minimax": {
+        "as_X": {
+          "win": 0,
+          "draw": 500,
+          "loss": 0
+        },
+        "as_O": {
+          "win": 0,
+          "draw": 500,
+          "loss": 0
+        },
+        "total": {
+          "win": 0,
+          "draw": 1000,
+          "loss": 0
+        },
+        "games": 1000
+      }
+    }
+  },
+  "baseline": {
+    "Random player": {
+      "vs_random": {
+        "as_X": {
+          "win": 587,
+          "draw": 124,
+          "loss": 289
+        },
+        "as_O": {
+          "win": 300,
+          "draw": 133,
+          "loss": 567
+        },
+        "total": {
+          "win": 887,
+          "draw": 257,
+          "loss": 856
+        },
+        "games": 2000
+      },
+      "vs_minimax": {
+        "as_X": {
+          "win": 0,
+          "draw": 124,
+          "loss": 376
+        },
+        "as_O": {
+          "win": 0,
+          "draw": 17,
+          "loss": 483
+        },
+        "total": {
+          "win": 0,
+          "draw": 141,
+          "loss": 859
+        },
+        "games": 1000
+      }
+    }
+  },
+  "curves": {
+    "Trained vs random opponent": [
+      {
+        "episode": 10000,
+        "optimal_rate": 0.7942477876106194,
+        "loss_vs_minimax": 0.64,
+        "loss_vs_random": 0.095,
+        "win_vs_random": 0.865
+      },
+      {
+        "episode": 20000,
+        "optimal_rate": 0.8519911504424779,
+        "loss_vs_minimax": 0.91,
+        "loss_vs_random": 0.06,
+        "win_vs_random": 0.9275
+      },
+      {
+        "episode": 30000,
+        "optimal_rate": 0.8840707964601769,
+        "loss_vs_minimax": 0.75,
+        "loss_vs_random": 0.04,
+        "win_vs_random": 0.9175
+      },
+      {
+        "episode": 40000,
+        "optimal_rate": 0.9073008849557522,
+        "loss_vs_minimax": 0.475,
+        "loss_vs_random": 0.0325,
+        "win_vs_random": 0.935
+      },
+      {
+        "episode": 50000,
+        "optimal_rate": 0.9245575221238939,
+        "loss_vs_minimax": 0.3,
+        "loss_vs_random": 0.04,
+        "win_vs_random": 0.9175
+      },
+      {
+        "episode": 60000,
+        "optimal_rate": 0.9382743362831858,
+        "loss_vs_minimax": 0.44,
+        "loss_vs_random": 0.0125,
+        "win_vs_random": 0.965
+      },
+      {
+        "episode": 70000,
+        "optimal_rate": 0.9460176991150443,
+        "loss_vs_minimax": 0.21,
+        "loss_vs_random": 0.025,
+        "win_vs_random": 0.935
+      },
+      {
+        "episode": 80000,
+        "optimal_rate": 0.9548672566371681,
+        "loss_vs_minimax": 0.305,
+        "loss_vs_random": 0.0125,
+        "win_vs_random": 0.9575
+      },
+      {
+        "episode": 90000,
+        "optimal_rate": 0.9615044247787611,
+        "loss_vs_minimax": 0.395,
+        "loss_vs_random": 0.0375,
+        "win_vs_random": 0.92
+      },
+      {
+        "episode": 100000,
+        "optimal_rate": 0.9643805309734513,
+        "loss_vs_minimax": 0.375,
+        "loss_vs_random": 0.03,
+        "win_vs_random": 0.9325
+      },
+      {
+        "episode": 110000,
+        "optimal_rate": 0.968141592920354,
+        "loss_vs_minimax": 0.735,
+        "loss_vs_random": 0.0125,
+        "win_vs_random": 0.945
+      },
+      {
+        "episode": 120000,
+        "optimal_rate": 0.9688053097345133,
+        "loss_vs_minimax": 0.41,
+        "loss_vs_random": 0.02,
+        "win_vs_random": 0.9475
+      },
+      {
+        "episode": 130000,
+        "optimal_rate": 0.9710176991150442,
+        "loss_vs_minimax": 0.21,
+        "loss_vs_random": 0.0075,
+        "win_vs_random": 0.94
+      },
+      {
+        "episode": 140000,
+        "optimal_rate": 0.9732300884955752,
+        "loss_vs_minimax": 0.245,
+        "loss_vs_random": 0.015,
+        "win_vs_random": 0.955
+      },
+      {
+        "episode": 150000,
+        "optimal_rate": 0.9754424778761062,
+        "loss_vs_minimax": 0.29,
+        "loss_vs_random": 0.015,
+        "win_vs_random": 0.96
+      },
+      {
+        "episode": 160000,
+        "optimal_rate": 0.9767699115044248,
+        "loss_vs_minimax": 0.18,
+        "loss_vs_random": 0.005,
+        "win_vs_random": 0.9475
+      },
+      {
+        "episode": 170000,
+        "optimal_rate": 0.9780973451327434,
+        "loss_vs_minimax": 0.265,
+        "loss_vs_random": 0.0125,
+        "win_vs_random": 0.9425
+      },
+      {
+        "episode": 180000,
+        "optimal_rate": 0.9805309734513274,
+        "loss_vs_minimax": 0.21,
+        "loss_vs_random": 0.0,
+        "win_vs_random": 0.9675
+      },
+      {
+        "episode": 190000,
+        "optimal_rate": 0.9811946902654868,
+        "loss_vs_minimax": 0.225,
+        "loss_vs_random": 0.01,
+        "win_vs_random": 0.945
+      },
+      {
+        "episode": 200000,
+        "optimal_rate": 0.9834070796460177,
+        "loss_vs_minimax": 0.265,
+        "loss_vs_random": 0.01,
+        "win_vs_random": 0.9675
+      }
+    ],
+    "Trained by self-play": [
+      {
+        "episode": 10000,
+        "optimal_rate": 0.8845132743362832,
+        "loss_vs_minimax": 0.675,
+        "loss_vs_random": 0.1075,
+        "win_vs_random": 0.7475
+      },
+      {
+        "episode": 20000,
+        "optimal_rate": 0.9758849557522123,
+        "loss_vs_minimax": 0.17,
+        "loss_vs_random": 0.0125,
+        "win_vs_random": 0.855
+      },
+      {
+        "episode": 30000,
+        "optimal_rate": 0.9971238938053097,
+        "loss_vs_minimax": 0.01,
+        "loss_vs_random": 0.0,
+        "win_vs_random": 0.8625
+      },
+      {
+        "episode": 40000,
+        "optimal_rate": 1.0,
+        "loss_vs_minimax": 0.0,
+        "loss_vs_random": 0.0,
+        "win_vs_random": 0.865
+      },
+      {
+        "episode": 50000,
+        "optimal_rate": 1.0,
+        "loss_vs_minimax": 0.0,
+        "loss_vs_random": 0.0,
+        "win_vs_random": 0.8925
+      },
+      {
+        "episode": 60000,
+        "optimal_rate": 1.0,
+        "loss_vs_minimax": 0.0,
+        "loss_vs_random": 0.0,
+        "win_vs_random": 0.8875
+      },
+      {
+        "episode": 70000,
+        "optimal_rate": 1.0,
+        "loss_vs_minimax": 0.0,
+        "loss_vs_random": 0.0,
+        "win_vs_random": 0.855
+      },
+      {
+        "episode": 80000,
+        "optimal_rate": 1.0,
+        "loss_vs_minimax": 0.0,
+        "loss_vs_random": 0.0,
+        "win_vs_random": 0.855
+      },
+      {
+        "episode": 90000,
+        "optimal_rate": 1.0,
+        "loss_vs_minimax": 0.0,
+        "loss_vs_random": 0.0,
+        "win_vs_random": 0.8575
+      },
+      {
+        "episode": 100000,
+        "optimal_rate": 1.0,
+        "loss_vs_minimax": 0.0,
+        "loss_vs_random": 0.0,
+        "win_vs_random": 0.8725
+      },
+      {
+        "episode": 110000,
+        "optimal_rate": 1.0,
+        "loss_vs_minimax": 0.0,
+        "loss_vs_random": 0.0,
+        "win_vs_random": 0.8825
+      },
+      {
+        "episode": 120000,
+        "optimal_rate": 1.0,
+        "loss_vs_minimax": 0.0,
+        "loss_vs_random": 0.0,
+        "win_vs_random": 0.8625
+      },
+      {
+        "episode": 130000,
+        "optimal_rate": 1.0,
+        "loss_vs_minimax": 0.0,
+        "loss_vs_random": 0.0,
+        "win_vs_random": 0.87
+      },
+      {
+        "episode": 140000,
+        "optimal_rate": 1.0,
+        "loss_vs_minimax": 0.0,
+        "loss_vs_random": 0.0,
+        "win_vs_random": 0.885
+      },
+      {
+        "episode": 150000,
+        "optimal_rate": 1.0,
+        "loss_vs_minimax": 0.0,
+        "loss_vs_random": 0.0,
+        "win_vs_random": 0.88
+      },
+      {
+        "episode": 160000,
+        "optimal_rate": 1.0,
+        "loss_vs_minimax": 0.0,
+        "loss_vs_random": 0.0,
+        "win_vs_random": 0.8675
+      },
+      {
+        "episode": 170000,
+        "optimal_rate": 1.0,
+        "loss_vs_minimax": 0.0,
+        "loss_vs_random": 0.0,
+        "win_vs_random": 0.88
+      },
+      {
+        "episode": 180000,
+        "optimal_rate": 1.0,
+        "loss_vs_minimax": 0.0,
+        "loss_vs_random": 0.0,
+        "win_vs_random": 0.8675
+      },
+      {
+        "episode": 190000,
+        "optimal_rate": 1.0,
+        "loss_vs_minimax": 0.0,
+        "loss_vs_random": 0.0,
+        "win_vs_random": 0.8875
+      },
+      {
+        "episode": 200000,
+        "optimal_rate": 1.0,
+        "loss_vs_minimax": 0.0,
+        "loss_vs_random": 0.0,
+        "win_vs_random": 0.87
+      }
+    ]
+  }
+}

@@ -6,7 +6,7 @@ A tabular Q-learning agent that learns Tic-Tac-Toe from scratch, evaluated the w
 
 | The agent sees one move draws (+0.00) and all others lose (−0.95) | Game result: a draw, the best possible against perfect play |
 |---|---|
-| ![Agent thinking](docs/screenshots/agent_thinking.jpg) | ![Draw](docs/screenshots/game_draw.jpg) |
+| ![Agent thinking](docs/screenshots/agent_thinking.png) | ![Draw](docs/screenshots/game_draw.png) |
 
 ## Results
 
